@@ -21,11 +21,11 @@ h1{
     font-size: 2.4rem;
 }
 nav{padding: 16px;
-background-color: 243b53;
+background-color: #243b53;
 text-align: center;
 border-bottom: 3px solid #ff8c42;}
 
-nav a:{display: inline-block;
+nav a{display: inline-block;
     margin: 6px;
     padding: 8px 14px;
     color: white;
@@ -50,7 +50,7 @@ content-card{
     background-color:white;
     border: 2px solid #cbd5e0;
     border-left:6px solid #ff8c42;
-    border-radius 8px
+    border-radius: 8px;
 
 }
 h2{
