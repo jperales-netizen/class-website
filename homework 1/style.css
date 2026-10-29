@@ -25,6 +25,9 @@ h1 {
 }
 
 nav {
+    display:flex;
+    justify-content: center;
+    gap:8px 16px;
   padding: 16px;
   background-color: #243b53;
   text-align: center;
@@ -32,8 +35,7 @@ nav {
 }
 
 nav a {
-  display: inline-block;
-  margin: 6px;
+  
   padding: 8px 14px;
   color: white;
   text-decoration: none;
@@ -41,19 +43,25 @@ nav a {
   border-radius: 6px;
 }
 
-nav a:hover {
+nav a:hover, 
+nav a:focus
   background-color: #ff8c42;
   color: #102a43;
 }
 
 main {
-  max-width: 900px;
+    display:grid;
+    grid-template-columns: minmax(o,1fr);
+    gap: 24px;
+    width:100%
+  max-width: 1152px;
   margin: 24px auto;
-  padding: 0 18px;
+  padding: 0 16px;
 }
 
 .content-card {
-  margin: 24px 0;
+    min-width: 0;
+  margin:0;
   padding: 22px;
   background-color: white;
   border: 2px solid #cbd5e0;
@@ -69,9 +77,11 @@ h2 {
 }
 
 p {
-  margin-bottom: 14px;
+  margin-bottom: 16px
 }
-
+figure{
+    margin: 24px 0 0;
+}
 li {
   margin: 8px 0;
 }
@@ -99,6 +109,18 @@ footer {
   background-color: #102a43;
   color: white;
   text-align: center;
+  border-top: 6px solid #ff8c42;
+} 
+@media(min-width: 768px){
+    main{
+        grid-template-columns:repeat(2,minmax(0,1fr)):
+    }
+}
+@media(min-width:1200px){
+    main{grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+}
+
 =======
 *{box-sizing: border-box;}
 
