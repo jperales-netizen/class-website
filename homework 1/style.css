@@ -44,14 +44,14 @@ nav a {
 }
 
 nav a:hover, 
-nav a:focus
+nav a:focus{
   background-color: #ff8c42;
   color: #102a43;
 }
 
 main {
     display:grid;
-    grid-template-columns: minmax(o,1fr);
+    grid-template-columns: minmax(0,1fr);
     gap: 24px;
     width:100%
   max-width: 1152px;
